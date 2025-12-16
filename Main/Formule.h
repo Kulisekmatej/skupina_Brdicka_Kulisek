@@ -32,3 +32,30 @@ public:
         std::cout << "VIIIIIIUUM! (Agresivni zvuk motoru Ferrari)" << std::endl;
     }
 };
+
+class Mercedes : public Formule {
+public:
+    Mercedes() : Formule("Mercedes") {}
+
+    void zvukMotoru() override {
+        std::cout << "WHIIIIINE! (Precizni zvuk motoru Mercedes)" << std::endl;
+    }
+};
+
+class RedBull : public Formule {
+public:
+    RedBull() : Formule("Red Bull Racing") {}
+
+    void zvukMotoru() override {
+        std::cout << "VROOOOOM! (Vysokootackovy motor Red Bull)" << std::endl;
+    }
+};
+
+class McLaren : public Formule {
+public:
+    McLaren() : Formule("McLaren") {}
+
+    void zvukMotoru() override {
+        std::cout << "SSSSSHHHHH! (Silny zvuk motoru McLaren)" << std::endl;
+    }
+};

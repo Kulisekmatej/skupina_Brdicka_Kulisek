@@ -1,23 +1,29 @@
 #include "Formule.h"
 
-class RedBull : public Formule {
-public:
-    RedBull() : Formule("Red Bull Racing") {}
-
-    void zvukMotoru() override {
-        std::cout << "VROOOOOM! (Vysokootackovy motor Red Bull)" << std::endl;
-    }
-};
 
 int main() {
     Ferrari ferrari;
+    Mercedes mercedes;
     RedBull redBull;
+    McLaren mclaren;
+
+    std::cout << "=== FORMULA 1 SHOW ===" << std::endl << std::endl;
 
     ferrari.zrychli();
     ferrari.zvukMotoru();
+    std::cout << std::endl;
+
+    mercedes.zrychli();
+    mercedes.zvukMotoru();
+    std::cout << std::endl;
 
     redBull.zrychli();
     redBull.zvukMotoru();
+    std::cout << std::endl;
+
+    mclaren.zrychli();
+    mclaren.zvukMotoru();
+    std::cout << std::endl;
 
     return 0;
 }
