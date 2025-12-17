@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.10)
-project(skupina_Brdicka_Kulisek)
+cmake_minimum_required(VERSION 3.16)
+project(skupina_Brdicka_Kulisek LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+add_subdirectory(Main)
 
-add_executable(skupina_Brdicka_Kulisek main.cpp Formule.h)

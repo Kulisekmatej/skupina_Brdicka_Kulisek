@@ -1,4 +1,8 @@
 #include "Formule.h"
+#include "Ferrari.h"
+#include "Mercedes.h"
+#include "RedBull.h"
+#include "McLaren.h"
 
 
 int main() {
@@ -11,6 +15,7 @@ int main() {
 
     ferrari.zrychli();
     ferrari.zvukMotoru();
+    ferrari.pouzijTurbo();
     std::cout << std::endl;
 
     mercedes.zrychli();
@@ -27,4 +32,3 @@ int main() {
 
     return 0;
 }
-
